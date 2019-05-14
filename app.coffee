@@ -3,6 +3,8 @@ metrics.initialize("tags")
 Settings = require 'settings-sharelatex'
 logger = require 'logger-sharelatex'
 logger.initialize("tags")
+if Settings.sentry?.dsn?
+	logger.initializeErrorReporting(Settings.sentry.dsn)
 express = require('express')
 app = express()
 controller = require("./app/js/TagsController")
