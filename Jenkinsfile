@@ -5,7 +5,7 @@ pipeline {
 
   environment {
     GIT_PROJECT = "tags"
-    JENKINS_WORKFLOW = "tags-sharelatex-internal"
+    JENKINS_WORKFLOW = "tags-sharelatex"
     TARGET_URL = "${env.JENKINS_URL}blue/organizations/jenkins/${JENKINS_WORKFLOW}/detail/$BRANCH_NAME/$BUILD_NUMBER/pipeline"
     GIT_API_URL = "https://api.github.com/repos/overleaf/${GIT_PROJECT}/statuses/$GIT_COMMIT"
   }
