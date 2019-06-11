@@ -15,6 +15,7 @@ services:
     build: .
     image: ci/$PROJECT_NAME:$BRANCH_NAME-$BUILD_NUMBER
     environment:
+      LOG_LEVEL: fatal
       MONGO_HOST: mongo
       MOCHA_GREP: ${MOCHA_GREP}
     depends_on:
