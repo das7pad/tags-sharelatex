@@ -10,7 +10,6 @@ services:
     user: node
     command: npm run test:unit:_run
 
-
   test_acceptance:
     build: .
     image: ci/$PROJECT_NAME:$BRANCH_NAME-$BUILD_NUMBER
@@ -23,8 +22,6 @@ services:
     user: node
     command: npm run test:acceptance:_run
 
-
-
   tar:
     build: .
     image: ci/$PROJECT_NAME:$BRANCH_NAME-$BUILD_NUMBER
@@ -33,7 +30,5 @@ services:
     command: tar -czf /tmp/build/build.tar.gz --exclude=build.tar.gz --exclude-vcs .
     user: root
 
-
   mongo:
     image: mongo:3.4
-
