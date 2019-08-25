@@ -15,10 +15,9 @@ metrics.memory.monitor(logger)
 
 HealthCheckController = require("./app/js/HealthCheckController")
 
-app.configure ()->
-	app.use bodyParser()
-	app.use metrics.http.monitor(logger)
-	app.use errorHandler()
+app.use bodyParser()
+app.use metrics.http.monitor(logger)
+app.use errorHandler()
 metrics.injectMetricsRoute(app)
 
 app.get  '/user/:user_id/tag', controller.getUserTags
