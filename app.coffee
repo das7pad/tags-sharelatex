@@ -6,6 +6,8 @@ logger.initialize("tags")
 if Settings.sentry?.dsn?
 	logger.initializeErrorReporting(Settings.sentry.dsn)
 express = require('express')
+bodyParser = require("body-parser")
+errorHandler = require("errorhandler")
 app = express()
 controller = require("./app/js/TagsController")
 Path = require("path")
@@ -14,10 +16,9 @@ metrics.memory.monitor(logger)
 HealthCheckController = require("./app/js/HealthCheckController")
 
 app.configure ()->
-	app.use express.methodOverride()
-	app.use express.bodyParser()
+	app.use bodyParser()
 	app.use metrics.http.monitor(logger)
-	app.use express.errorHandler()
+	app.use errorHandler()
 metrics.injectMetricsRoute(app)
 
 app.get  '/user/:user_id/tag', controller.getUserTags
