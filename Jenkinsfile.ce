@@ -102,19 +102,6 @@ pipeline {
           }
         }
 
-        stage('Acceptance Tests') {
-          steps {
-            sh 'make test_acceptance'
-          }
-          post {
-            always {
-              xunit (tools: [JUnit(pattern: 'output/acceptance.xml')])
-            }
-            cleanup {
-              sh 'make clean_test_acceptance'
-            }
-          }
-        }
       }
     }
 

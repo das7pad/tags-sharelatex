@@ -34,12 +34,11 @@ clean:
 test: test_unit test_acceptance
 
 test_unit:
-	@[ ! -d test/unit ] && echo "tags has no unit tests" || $(DOCKER_COMPOSE) run --rm test_unit
+	$(DOCKER_COMPOSE) run --rm test_unit
 
 test_acceptance: test_clean test_acceptance_pre_run test_acceptance_run
 
 test_acceptance_run:
-	@[ ! -d test/acceptance ] && echo "tags has no acceptance tests" || $(DOCKER_COMPOSE) run --rm test_acceptance
 
 clean_test_acceptance:
 
@@ -47,7 +46,6 @@ test_clean:
 	$(DOCKER_COMPOSE) down -v -t 0
 
 test_acceptance_pre_run:
-	@[ ! -f test/acceptance/scripts/pre-run ] && echo "tags has no pre acceptance tests task" || $(DOCKER_COMPOSE) run --rm test_acceptance test/acceptance/scripts/pre-run
 
 build_app:
 	npm run compile:all
