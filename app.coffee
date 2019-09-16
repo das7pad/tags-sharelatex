@@ -4,7 +4,7 @@ Settings = require 'settings-sharelatex'
 logger = require 'logger-sharelatex'
 logger.initialize("tags")
 if Settings.sentry?.dsn?
-	logger.initializeErrorReporting(Settings.sentry.dsn)
+	logger.initializeErrorReporting(Settings.sentry.dsn, Settings.sentry.options)
 express = require('express')
 bodyParser = require("body-parser")
 errorHandler = require("errorhandler")
