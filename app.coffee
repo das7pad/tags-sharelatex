@@ -5,6 +5,12 @@ logger = require 'logger-sharelatex'
 logger.initialize("tags")
 if Settings.sentry?.dsn?
 	logger.initializeErrorReporting(Settings.sentry.dsn, Settings.sentry.options)
+
+if Settings.catchErrors
+	process.removeAllListeners "uncaughtException"
+	process.on "uncaughtException", (error) ->
+		logger.error err: error, "uncaughtException"
+
 express = require('express')
 bodyParser = require("body-parser")
 errorHandler = require("errorhandler")
