@@ -35,7 +35,6 @@
     "underscore": "1.4.4"
   },
   "devDependencies": {
-    "bunyan": "^1.0.0",
     "chai": "3.5.0",
     "mocha": "^4.1.0",
     "sandboxed-module": "^2.0.3",
