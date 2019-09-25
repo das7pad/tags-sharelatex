@@ -694,12 +694,20 @@
       "dev": true
     },
     "dtrace-provider": {
-      "version": "0.8.7",
-      "resolved": "https://registry.npmjs.org/dtrace-provider/-/dtrace-provider-0.8.7.tgz",
-      "integrity": "sha1-3JObTT4GIM/gwc2APQ0tftBP/QQ=",
+      "version": "0.8.8",
+      "resolved": "https://registry.npmjs.org/dtrace-provider/-/dtrace-provider-0.8.8.tgz",
+      "integrity": "sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==",
       "optional": true,
       "requires": {
-        "nan": "^2.10.0"
+        "nan": "^2.14.0"
+      },
+      "dependencies": {
+        "nan": {
+          "version": "2.14.0",
+          "resolved": "https://registry.npmjs.org/nan/-/nan-2.14.0.tgz",
+          "integrity": "sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==",
+          "optional": true
+        }
       }
     },
     "duplexify": {
@@ -1230,9 +1238,8 @@
       "integrity": "sha1-feoh2MGNdwOifHBMFdO4SmfjOv8="
     },
     "logger-sharelatex": {
-      "version": "1.8.0",
-      "resolved": "https://registry.npmjs.org/logger-sharelatex/-/logger-sharelatex-1.8.0.tgz",
-      "integrity": "sha512-8+lahh2dGkYbhL6OcPuTIKXqg3FLHhzzkDsvg648/ms31BpBh2IX20J7U3VSEKBIR9sPhwYy4F4lQBQMiFp+/Q==",
+      "version": "git+https://github.com/das7pad/logger-sharelatex.git#0a27a2785df04b627bb3557f01ac6e7573a97c61",
+      "from": "git+https://github.com/das7pad/logger-sharelatex.git#0a27a2785df04b627bb3557f01ac6e7573a97c61",
       "requires": {
         "@overleaf/o-error": "^2.0.0",
         "bunyan": "1.8.12",
@@ -1432,9 +1439,9 @@
       "integrity": "sha1-EUyUlnPiqKNenTV4hSeqN7Z52is="
     },
     "moment": {
-      "version": "2.22.2",
-      "resolved": "https://registry.npmjs.org/moment/-/moment-2.22.2.tgz",
-      "integrity": "sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=",
+      "version": "2.24.0",
+      "resolved": "https://registry.npmjs.org/moment/-/moment-2.24.0.tgz",
+      "integrity": "sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==",
       "optional": true
     },
     "mongojs": {
@@ -1839,9 +1846,9 @@
       }
     },
     "psl": {
-      "version": "1.3.1",
-      "resolved": "https://registry.npmjs.org/psl/-/psl-1.3.1.tgz",
-      "integrity": "sha512-2KLd5fKOdAfShtY2d/8XDWVRnmp3zp40Qt6ge2zBPFARLXOGUf2fHD5eg+TV/5oxBtQKVhjUaKFsAaE4HnwfSA=="
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/psl/-/psl-1.4.0.tgz",
+      "integrity": "sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw=="
     },
     "punycode": {
       "version": "2.1.1",
