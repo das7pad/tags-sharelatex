@@ -27,7 +27,7 @@
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "logger-sharelatex": "git+https://github.com/das7pad/logger-sharelatex.git#0a27a2785df04b627bb3557f01ac6e7573a97c61",
-    "metrics-sharelatex": "^2.2.0",
+    "metrics-sharelatex": "git+https://github.com/das7pad/metrics-sharelatex.git#866a23f83fcc3e812a70b4b4a88d445323e66988",
     "mongojs": "^2.4.0",
     "node-statsd": "0.0.3",
     "request": "^2.65.0",
