@@ -43,12 +43,12 @@ app.get '/health_check', (req, res)->
 	HealthCheckController.check (err)->
 		if err?
 			logger.err err:err, "error performing health check"
-			res.send 500
+			res.sendStatus 500
 		else
-			res.send 200
+			res.sendStatus 200
 
 app.get '*', (req, res)->
-	res.send 404
+	res.sendStatus 404
 
 host = Settings.internal?.tags?.host || "localhost"
 port = Settings.internal?.tags?.port || 3012
