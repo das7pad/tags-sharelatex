@@ -1,6 +1,6 @@
 tags
 --language=coffeescript
---node-version=10.16.3
+--node-version=10.17.0
 --acceptance-creds=None
 --dependencies=mongo,
 --docker-repos=gcr.io/overleaf-ops
