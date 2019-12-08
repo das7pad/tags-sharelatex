@@ -28,7 +28,6 @@
     "logger-sharelatex": "git+https://github.com/das7pad/logger-sharelatex.git#c9e043041b1f6a4c76ce36a3642cef64483e99f3",
     "metrics-sharelatex": "git+https://github.com/das7pad/metrics-sharelatex.git#866a23f83fcc3e812a70b4b4a88d445323e66988",
     "mongojs": "^2.4.0",
-    "node-statsd": "0.0.3",
     "request": "^2.65.0",
     "settings-sharelatex": "^1.1.0",
     "underscore": "1.4.4"
