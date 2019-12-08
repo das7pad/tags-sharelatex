@@ -13,7 +13,6 @@ if Settings.catchErrors
 
 express = require('express')
 bodyParser = require("body-parser")
-errorHandler = require("errorhandler")
 app = express()
 controller = require("./app/js/TagsController")
 Path = require("path")
@@ -23,7 +22,6 @@ HealthCheckController = require("./app/js/HealthCheckController")
 
 app.use bodyParser()
 app.use metrics.http.monitor(logger)
-app.use errorHandler()
 metrics.injectMetricsRoute(app)
 
 app.get  '/user/:user_id/tag', controller.getUserTags
