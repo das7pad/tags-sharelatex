@@ -23,7 +23,6 @@
   "dependencies": {
     "async": "^0.1.22",
     "body-parser": "^1.19.0",
-    "coffee-script": "^1.7.1",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "logger-sharelatex": "git+https://github.com/das7pad/logger-sharelatex.git#c9e043041b1f6a4c76ce36a3642cef64483e99f3",
@@ -36,6 +35,7 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
+    "coffee-script": "^1.7.1",
     "mocha": "^4.1.0",
     "sandboxed-module": "^2.0.3",
     "sinon": "1.17.7"
