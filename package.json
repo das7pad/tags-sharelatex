@@ -28,14 +28,14 @@
     "metrics-sharelatex": "git+https://github.com/das7pad/metrics-sharelatex.git#866a23f83fcc3e812a70b4b4a88d445323e66988",
     "mongojs": "^2.4.0",
     "request": "^2.65.0",
-    "settings-sharelatex": "^1.1.0",
-    "underscore": "1.4.4"
+    "settings-sharelatex": "^1.1.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
     "coffee-script": "^1.7.1",
     "mocha": "^4.1.0",
     "sandboxed-module": "^2.0.3",
-    "sinon": "1.17.7"
+    "sinon": "1.17.7",
+    "underscore": "1.4.4"
   }
 }
